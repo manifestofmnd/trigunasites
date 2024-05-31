@@ -1,0 +1,110 @@
+:root {
+	--bg:	#fafafa;
+	--fg:	#2f343f;
+	--hl:	#4084d6;
+	--hl2:	#edd237;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg:	rgb(55, 89, 163);
+		--fg:	#ffffff;
+	}
+}
+
+body {
+	background-color: var(--bg);
+	color: var(--fg);
+	font-size: 1em;
+	font-family: C059, Serif;
+	width: 85%;
+	max-width: 52em;
+	margin: 1em auto;
+	text-align: left;
+}
+
+p {
+	text-align: justify;
+}
+
+h1 {
+	font-size: 2.5em;
+	margin: 0.6em 0 0.2em 0;
+}
+
+a {
+	color: var(--hl);
+}
+
+a:hover {
+	color: var(--hl2);
+}
+
+pre {
+	text-align: left;
+}
+
+img {
+	display: block;
+	margin: auto;
+	max-height: 25em;
+	max-width: 100%;
+	max-width: 35em;
+}
+
+ul {
+	margin: 0 1em;
+	padding: 0;
+}
+
+li {
+	margin: 0.5em 0;
+}
+
+blockquote {
+	font-style: italic;
+}
+
+.columns {
+	columns: 2;
+}
+
+.block {
+	display: inline-block;
+	max-width: 99%;
+}
+
+.buttons {
+	justify-content: center;
+	display: flex;
+	margin: -1em 0;
+}
+
+.buttons img {
+	display: inline-block;
+}
+
+.cutter {
+	overflow: hidden;
+	white-space: nowrap;
+	font-family: monospace;
+	font-size: 1.2em;
+
+	padding: 0.5em 0;	
+	border: 1px solid var(--fg);
+	display: inline-block;
+	max-width: 100%;
+	margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+	body {
+		width: 90%;
+		font-size: 1.1em;
+	}
+	
+	.columns {
+		columns: 1;
+	}
+
+}
